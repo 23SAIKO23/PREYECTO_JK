@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0175C2">
+  <title>Proyecto JK | Contacto</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html#inicio" class="brand">
+        <img src="assets/logo.svg" alt="Proyecto JK" width="36" height="36">
+        <span>Proyecto JK</span>
+      </a>
+      <nav class="menu" aria-label="Principal">
+        <a href="sobre.html">Sobre</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="proyectos.html">Proyectos</a>
+        <a href="proceso.html">Proceso</a>
+        <a href="planes.html">Planes</a>
+        <a href="testimonios.html">Testimonios</a>
+        <a href="stack.html">Stack</a>
+        <a href="faqs.html">FAQs</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <div class="container breadcrumbs"><a href="index.html">Inicio</a><span class="sep">/</span><span>Contacto</span></div>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Hablemos</h1>
+        <p class="subtle">Cuéntanos tu idea y te proponemos el camino más corto del prototipo al producto.</p>
+        <div class="chips">
+          <span class="chip">MVP</span>
+          <span class="chip">Producto en producción</span>
+          <span class="chip">Escalar</span>
+        </div>
+      </div>
+    </section>
+    <section class="section contact" id="contacto">
+      <div class="container">
+        <p class="subtle">Completa el formulario y coordinamos una llamada.</p>
+        <p><a class="btn ghost small" href="javascript:history.back()">← Volver</a></p>
+        <form class="form" id="contact-form">
+          <div class="form-row">
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="email" name="email" placeholder="Email" required>
+          </div>
+          <textarea name="mensaje" rows="5" placeholder="Cuéntanos tu idea" required></textarea>
+          <button type="submit" class="btn primary full">Enviar</button>
+        </form>
+        <div class="callout" style="margin-top:12px"><span class="badge">Tiempo estimado</span> Respondemos en menos de 24 horas hábiles.</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer">
+      <span>© <span id="year"></span> Proyecto JK</span>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="LinkedIn">IN</a>
+        <a href="#" aria-label="GitHub">GH</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

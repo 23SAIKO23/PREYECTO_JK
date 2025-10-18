@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0175C2">
+  <title>Proyecto JK | Testimonios</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html#inicio" class="brand">
+        <img src="assets/logo.svg" alt="Proyecto JK" width="36" height="36">
+        <span>Proyecto JK</span>
+      </a>
+      <nav class="menu" aria-label="Principal">
+        <a href="sobre.html">Sobre</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="proyectos.html">Proyectos</a>
+        <a href="proceso.html">Proceso</a>
+        <a href="planes.html">Planes</a>
+        <a href="testimonios.html" class="active">Testimonios</a>
+        <a href="stack.html">Stack</a>
+        <a href="faqs.html">FAQs</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <div class="container breadcrumbs"><a href="index.html">Inicio</a><span class="sep">/</span><span>Testimonios</span></div>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Testimonios</h1>
+        <p class="subtle">Clientes que confiaron en nosotros y lograron resultados.</p>
+        <div class="chips">
+          <span class="chip">Calidad</span>
+          <span class="chip">Velocidad</span>
+          <span class="chip">Comunicación</span>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="testimonios">
+      <div class="container">
+        <p class="subtle">Lo que dicen nuestros clientes sobre calidad, tiempos y resultados.</p>
+        <div class="grid testimonials" style="margin-top:12px">
+          <blockquote class="card"><p>“Transformaron nuestra presencia digital. Rápidos y detallistas.”</p><footer>— Cliente SaaS</footer></blockquote>
+          <blockquote class="card"><p>“La landing convirtió 3x más en la primera semana.”</p><footer>— Agencia Marketing</footer></blockquote>
+          <blockquote class="card"><p>“Excelente comunicación y resultados medibles.”</p><footer>— Founder Ecommerce</footer></blockquote>
+        </div>
+        <div class="callout"><span class="badge">Confianza</span> Trabajamos con objetivos claros y métricas para mostrar impacto real.</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer">
+      <span>© <span id="year"></span> Proyecto JK</span>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="LinkedIn">IN</a>
+        <a href="#" aria-label="GitHub">GH</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

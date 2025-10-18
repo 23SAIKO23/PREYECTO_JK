@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0175C2">
+  <title>Proyecto JK | Servicios</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html#inicio" class="brand">
+        <img src="assets/logo.svg" alt="Proyecto JK" width="36" height="36">
+        <span>Proyecto JK</span>
+      </a>
+      <nav class="menu" aria-label="Principal">
+        <a href="sobre.html">Sobre</a>
+        <a href="servicios.html" class="active">Servicios</a>
+        <a href="proyectos.html">Proyectos</a>
+        <a href="proceso.html">Proceso</a>
+        <a href="planes.html">Planes</a>
+        <a href="testimonios.html">Testimonios</a>
+        <a href="stack.html">Stack</a>
+        <a href="faqs.html">FAQs</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <div class="container breadcrumbs"><a href="index.html">Inicio</a><span class="sep">/</span><span>Servicios</span></div>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Servicios</h1>
+        <p class="subtle">Diseño, desarrollo y sistemas listos para escalar.</p>
+        <div class="chips">
+          <span class="chip">UI/UX</span>
+          <span class="chip">Multiplataforma</span>
+          <span class="chip">APIs</span>
+          <span class="chip">Automatización</span>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="servicios">
+      <div class="container">
+        <p class="subtle">Qué hacemos: diseño de interfaces, desarrollo multiplataforma y sistemas listos para escalar.</p>
+        <div class="grid cards" style="margin-top:12px">
+          <article class="card">
+            <div class="card-icon">⚡</div>
+            <h3>Landing Pages</h3>
+            <p>Diseños modernos, animaciones suaves y conversión optimizada para captar clientes.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">🧠</div>
+            <h3>Aplicaciones Web</h3>
+            <p>SPAs y dashboards escalables, APIs seguras y arquitectura limpia.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">🛠️</div>
+            <h3>Sistemas a Medida</h3>
+            <p>Automatización de procesos, integraciones y herramientas internas.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">📱</div>
+            <h3>Apps Móviles</h3>
+            <p>Una sola base de código para llegar a múltiples plataformas con rendimiento nativo.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">🧩</div>
+            <h3>Integraciones</h3>
+            <p>Pagos, analítica, autenticación y servicios terceros conectados de forma segura.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">🚀</div>
+            <h3>Optimización</h3>
+            <p>Mejoras de performance, accesibilidad y SEO para impulsar resultados.</p>
+          </article>
+        </div>
+        <div class="callout"><span class="badge">Nota</span> Adaptamos el servicio a tus objetivos y etapa: MVP, escalamiento o replatforming.</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer">
+      <span>© <span id="year"></span> Proyecto JK</span>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="LinkedIn">IN</a>
+        <a href="#" aria-label="GitHub">GH</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
