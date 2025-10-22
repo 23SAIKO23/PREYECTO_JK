@@ -23,7 +23,15 @@
   <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
 </head>
 <body>
+  <div class="scroll-indicator" id="scrollIndicator"></div>
   <div class="bg-grid"></div>
+  <div class="particles-container" id="particles"></div>
+  <div class="floating-shapes">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+    <div class="shape shape-4"></div>
+  </div>
   <div id="model-container"></div>
   <header class="site-header" id="inicio">
     <div class="container nav">
@@ -39,9 +47,14 @@
         <a href="stack.html"><span>Stack</span></a>
         <a href="contacto.html"><span>Contacto</span></a>
       </nav>
-      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="header-controls">
+        <button class="theme-toggle" aria-label="Cambiar tema" id="themeToggle">
+          <span class="theme-icon">🌙</span>
+        </button>
+        <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -54,7 +67,22 @@
           <a href="#contacto" class="btn primary">Solicitar propuesta</a>
           <a href="#proyectos" class="btn ghost">Ver proyectos</a>
         </div>
-        <img class="hero-img" src="https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?q=80&w=1600&auto=format&fit=crop" alt="Código en pantalla de alto contraste" loading="lazy">
+        <div class="code-animation-container">
+          <div class="code-window">
+            <div class="window-header">
+              <div class="window-controls">
+                <span class="control close"></span>
+                <span class="control minimize"></span>
+                <span class="control maximize"></span>
+              </div>
+              <div class="window-title">proyecto-jk.js</div>
+            </div>
+            <div class="code-content">
+              <pre id="animated-code"><code></code></pre>
+              <div class="cursor"></div>
+            </div>
+          </div>
+        </div>
         <div class="stats">
           <div><strong>+50</strong><span>Proyectos</span></div>
           <div><strong>99.9%</strong><span>Uptime</span></div>
@@ -183,5 +211,7 @@
 
   <script src="script.js"></script>
   <script src="model-animation.js"></script>
+  <script src="enhanced-ui.js"></script>
+  <script src="code-animation.js"></script>
 </body>
 </html>
